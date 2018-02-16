@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-class ShoppingCart extends React.Component {
+class ShoppingCart extends Component {
     render() {
         return (
             <div className="shopping-cart">
@@ -16,3 +16,6 @@ class ShoppingCart extends React.Component {
         );        
     }
 }
+
+
+export default ShoppingCart;

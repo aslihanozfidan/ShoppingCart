@@ -1,15 +1,10 @@
 import React from 'react';
-import { render } from 'react-dom';
-import styles from './style/style.css';
+import ReactDOM from 'react-dom';
+import './style/style.css';
 
-import ShoppingCart from './components/ShoppingCart';
+import ShoppingCart from './components/ShoppingCart/ShoppingCart';
 
-class App extends React.Component {
-    render() {
-        return (
-            <ShoppingCart name="Asli" />
-        );        
-    }
-}
-
-
+ReactDOM.render(
+	<ShoppingCart name="Asli" />,
+	document.getElementById('root')
+	);

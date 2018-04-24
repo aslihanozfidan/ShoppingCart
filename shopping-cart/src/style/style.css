@@ -1,0 +1,101 @@
+.product {
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    grid-gap: 0px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    .product .name {
+        grid-column: 1 / 4;
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+        color: #0360bc;
+        font-weight: bold;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .product .image {
+        display: inline-block;
+        padding: 10px;
+        padding-right: 30px;
+    }
+
+        .product .image img {
+            height: 150px;
+        }
+
+    .product .properties {
+        float: right;
+        height: 110px;
+        padding: 30px;
+    }
+
+        .product .properties .stock, .product .properties .shipping {
+            font-size: 12px;
+            font-weight: bold;
+            color: #2ccc08;
+            padding-bottom: 5px;
+        }
+
+        .product .properties .shipping {
+            color:#606060;
+        }
+
+        .product .properties .gift {  
+            font-size: 12px;
+            font-weight: bold;          
+            color: #0360bc;
+        }
+    
+        .product .properties .price {            
+            font-size: 20px;
+            padding-top: 20px;
+            color: #606060;
+        }
+
+            .product .properties .price span {            
+                padding: 5px;
+                border: 2px solid #f24646;
+                border-radius: 40px;
+            }
+        
+        .shopping-cart-buttons {
+            clear: both;
+        }
+
+            .shopping-cart-buttons .count, .product .buttons .add-later, .product .buttons .delete {
+                height: 17%;
+                margin: 5px;
+                display: block;
+                border-bottom: 1px solid  rgba(0,0,0,0.1);
+                color: #606060;
+                text-align: center;
+                padding: 10px;
+                font-weight: bold;
+            }            
+
+            .shopping-cart-buttons .add-later {
+                color: #e9e060;
+            }
+
+            .shopping-cart-buttons .delete {
+                color:#c20202;
+                border: none;
+            }
+
+                .shopping-cart-buttons .count button {
+                    padding: 5px;
+                    margin: 5px;
+                    border: 1px solid rgba(0,0,0,0.1);
+                    border-radius: 5px;
+                    background-color: transparent;
+                }
+
+            
+        
+
+    
